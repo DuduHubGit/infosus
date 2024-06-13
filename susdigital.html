@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  background-color: #f1f1f1;
+  height: 1200px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <h2>SUS DIGITAL</h2>
+</header>
+<button class="home-button" onclick="window.location.href='infosus.html'">Voltar ao Inicio</button>
+
+  
+  <article>
+    <h1>O SUS NA PALMA DA SUA MÃO<Obj></Obj></h1>
+    <p>O SUS Digital é uma iniciativa do Ministério da Saúde que visa integrar tecnologias digitais aos serviços de saúde pública. Seu objetivo principal é modernizar o sistema de saúde, 
+        facilitando o acesso dos cidadãos aos serviços e informações de saúde, além de otimizar a gestão e o atendimento prestado pelos profissionais da área.</p>
+        <div class="header">
+           <center><img src="susdigital.jpg" alt="left:470"></center>
+ <br>
+ <p><h2>Principais Funcionalidades:</h2>
+    <ul>
+        <li>
+            <strong>Prontuário Eletrônico do Cidadão (PEC)</strong>: O PEC é uma ferramenta que permite a criação de um registro único e digitalizado das informações de saúde de cada paciente. Com isso, os dados médicos podem ser acessados em qualquer unidade de saúde do país, garantindo continuidade e qualidade no atendimento.
+        </li><br>
+        <li>
+            <strong>Aplicativos Móveis</strong>: Aplicativos como o Conecte SUS permitem que os cidadãos acompanhem suas consultas, exames, vacinas e medicamentos diretamente pelo celular. Além disso, é possível agendar consultas e acessar informações sobre a rede de saúde disponível.
+        </li><br>
+        <li>
+            <strong>Telemedicina</strong>: A telemedicina facilita a realização de consultas à distância, conectando pacientes e profissionais de saúde por meio de videoconferências. Isso é especialmente importante para regiões remotas, onde o acesso a especialistas pode ser limitado.
+        </li><br>
+        <li>
+            <strong>Integração de Sistemas</strong>: O SUS Digital promove a integração entre diversos sistemas de informação em saúde, facilitando a troca de dados entre hospitais, clínicas, laboratórios e outras unidades de saúde. Isso contribui para um atendimento mais ágil e coordenado.
+        </li><br>
+        <li>
+            <strong>Monitoramento e Vigilância em Saúde</strong>: Através do SUS Digital, é possível monitorar em tempo real a ocorrência de doenças e epidemias, permitindo respostas mais rápidas e eficazes às emergências de saúde pública.
+        </li><br>
+    </ul></p>
+
+    <h2>Benefícios para a População:</h2>
+    <ul>
+        <li>
+            <strong>Acesso Facilitado</strong>: Com a digitalização, os cidadãos têm acesso rápido e fácil às suas informações de saúde, podendo gerenciar melhor seu histórico médico e cuidados necessários.
+        </li><br>
+        <li>
+            <strong>Eficiência no Atendimento</strong>: A redução de burocracia e a melhora na comunicação entre unidades de saúde resultam em atendimentos mais rápidos e eficientes.
+        </li><br>
+        <li>
+            <strong>Maior Transparência</strong>: O acesso a dados e informações sobre o funcionamento do sistema de saúde aumenta a transparência e a confiança da população no SUS.
+        </li><br>
+    </ul>
+    <center><a href="https://www.gov.br/pt-br/servicos/acessar-a-plataforma-movel-de-servicos-digitais-do-ministerio-da-saude">
+        <br>
+        Clike aqui ou em cima da foto abaixo para acessar o SUS digital!
+        <br>
+        <img src="sus digital logo.svg" height="200" width="350"></center>
+
+        <center><img src="logo sao lucas afya.png" height="300" width="900"></center>
+  </article>
+</section>
+
+
+</body>
+</html>
+

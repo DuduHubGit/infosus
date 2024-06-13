@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  background-color: #f1f1f1;
+  height: 1740px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+div#rodape{
+    height: 200px;
+    position: absolute; top: 1900px; left: -10px;
+    width: 150%;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    top: 2000px;
+    right: 0px;
+    bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Informações Locais</h2>
+</header>
+<button class="home-button" onclick="window.location.href='infosus.html'">Voltar ao Inicio</button>
+
+  
+  <article>
+    <h1>Principais unidades de saúde na cidade</h1>
+    <p><ul>
+      <li>
+          <h2>Hospital Municipal Claudionor Couto Roriz</h2>
+          <p><strong>Endereço:</strong> Av. Marechal Rondon, 700 - Centro, Ji-Paraná, RO</p>
+          <p><strong>Telefone:</strong> (69) 3421-3728</p>
+          <p><strong>Funcionamento:</strong> 24 horas por dia</p>
+          <p><strong>Serviços:</strong> Atendimento de urgência e emergência, internações, consultas médicas, exames laboratoriais e de imagem.</p>
+      </li>
+      <li>
+          <h2>Unidade de Pronto Atendimento (UPA) 24h</h2>
+          <p><strong>Endereço:</strong> Rua JK, 1087 - Jardim Presidencial, Ji-Paraná, RO</p>
+          <p><strong>Telefone:</strong> (69) 3422-0241</p>
+          <p><strong>Funcionamento:</strong> 24 horas por dia</p>
+          <p><strong>Serviços:</strong> Atendimento de urgência e emergência, consultas médicas, serviços de enfermagem, medicamentos.</p>
+      </li>
+      <li>
+          <h2>Centro de Especialidades Médicas (CEM)</h2>
+          <p><strong>Endereço:</strong> Rua Dois de Abril, 1282 - Centro, Ji-Paraná, RO</p>
+          <p><strong>Telefone:</strong> (69) 3421-2630</p>
+          <p><strong>Funcionamento:</strong> De segunda a sexta-feira, das 7h às 18h</p>
+          <p><strong>Serviços:</strong> Consultas com especialistas, exames especializados, pequenos procedimentos.</p>
+      </li>
+      <li>
+          <h2>Unidades Básicas de Saúde (UBS)</h2>
+          <p>Ji-Paraná conta com diversas UBS distribuídas pelos bairros da cidade, oferecendo serviços básicos de saúde, como consultas médicas, atendimento de enfermagem, vacinação, pré-natal, atendimento odontológico e acompanhamento de doenças crônicas.</p>
+          <h3>Exemplo de UBS:</h3>
+          <p><strong>UBS 2 de Abril</strong></p>
+          <p><strong>Endereço:</strong> Rua T-23, 1390 - Jardim dos Migrantes, Ji-Paraná, RO</p>
+          <p><strong>Telefone:</strong> (69) 3422-6096</p>
+          <p><strong>Funcionamento:</strong> De segunda a sexta-feira, das 7h às 17h</p>
+      </li>
+      <li>
+          <h2>Centro de Atenção Psicossocial (CAPS)</h2>
+          <p><strong>Endereço:</strong> Rua Mato Grosso, 1848 - Jardim dos Migrantes, Ji-Paraná, RO</p>
+          <p><strong>Telefone:</strong> (69) 3422-9080</p>
+          <p><strong>Funcionamento:</strong> De segunda a sexta-feira, das 7h às 17h</p>
+          <p><strong>Serviços:</strong> Atendimento psicossocial, terapias de grupo, consultas psiquiátricas, acompanhamento de transtornos mentais.</p>
+      </li>
+      <li>
+          <h2>Policlínica Municipal de Ji-Paraná</h2>
+          <p><strong>Endereço:</strong> Rua T-12, 1940 - Nova Brasília, Ji-Paraná, RO</p>
+          <p><strong>Telefone:</strong> (69) 3422-6891</p>
+          <p><strong>Funcionamento:</strong> De segunda a sexta-feira, das 7h às 17h</p>
+          <p><strong>Serviços:</strong> Diversas especialidades médicas, exames de imagem e laboratoriais, acompanhamento de doenças crônicas.</p>
+      </li>
+      <li>
+          <h2>Informações Gerais</h2>
+          <p><strong>Agendamento de Consultas:</strong> Pode ser feito diretamente nas unidades de saúde ou pelo sistema de regulação municipal.</p>
+          <p><strong>Cartão SUS:</strong> Necessário para atendimento, pode ser feito em qualquer unidade de saúde apresentando documentos pessoais (RG, CPF e comprovante de residência).</p>
+          <p><strong>Vacinação:</strong> Disponível nas UBS e em campanhas especiais.</p>
+      </li>
+      <li>
+          <h2>Atendimento de Urgência e Emergência</h2>
+          <p><strong>Emergências Médicas:</strong> UPA 24h e Hospital Municipal Claudionor Couto Roriz são os principais pontos de atendimento.</p>
+          <p><strong>Ambulâncias:</strong> Serviço disponível para emergências, acionar pelo número 192 (SAMU).</p>
+      </li>
+      <li>
+          <h2>Contato com a Secretaria Municipal de Saúde</h2>
+          <p><strong>Endereço:</strong> Rua Tenente Brasil, 100 - Centro, Ji-Paraná, RO</p>
+          <p><strong>Telefone:</strong> (69) 3421-1680</p>
+          <p><strong>E-mail:</strong> Recomendado verificar no site oficial da prefeitura.</p>
+      </li>
+  </ul></p>
+  </article>
+</section>
+</body>
+<div id="rodape" align="left">
+  <div align="left">
+      <h1>
+      <img src="logo sao lucas afya.png" height="300" width="1350"/> 
+  </div>
+</div>
+</html>
+

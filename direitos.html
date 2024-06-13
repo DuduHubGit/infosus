@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>quem somos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  background-color: #f1f1f1;
+  height: 700px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+div#rodape{
+    height: 200px;
+    position: absolute; top: 1900px; left: -10px;
+    width: 150%;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    top: 2000px;
+    right: 0px;
+    bottom: 10px;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>SAIBAM O SEUS DIREITOS</h2>
+</header>
+<button class="home-button" onclick="window.location.href='infosus.html'">Voltar ao inicio</button>
+
+  
+  <article>
+    <h1>A saúde é um direito fundamental de todos os cidadãos, garantido pela Constituição Federal do Brasil. Independentemente de classe social, raça, gênero ou qualquer outra
+       condição, todos têm o direito de acessar serviços de saúde de qualidade. O Sistema Único de Saúde (SUS) foi criado com o propósito de assegurar que todos os brasileiros 
+       possam receber atendimento médico gratuito e integral. Este sistema inclusivo visa promover a equidade, oferecendo cuidados preventivos, curativos e reabilitadores,
+        garantindo que ninguém fique desamparado quando se trata de saúde. A proteção e promoção da saúde são pilares essenciais para o bem-estar e desenvolvimento de uma
+         sociedade justa e solidária.</h1>
+    
+ <center> <img src="direito.jpg" height="450 " width="600"> </center>
+ <center><img src="logo sao lucas afya.png" height="300" width="900"></center>
+  </article>
+ 
+</section>
+
+
+</body>
+</html>
+

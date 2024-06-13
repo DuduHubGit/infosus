@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>quem somos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+article {
+  float: left;
+  padding: 20px;
+  background-color: #f1f1f1;
+  height: 780px; /* only for demonstration, should be removed */
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>UM POUCO SOBRE NOS...</h2>
+</header>
+<button class="home-button" onclick="window.location.href='infosus.html'">Voltar ao Inicio</button>
+<article>
+<h1>Somos um grupo de acadêmicos do Centro Universitário São Lucas, localizado no campus de Ji-Paraná, Rondônia. Por meio do Projeto de Extensão denominado Tech Cidadania, 
+  estamos empenhados em fomentar a integração entre cidadania e inclusão digital. Nosso objetivo principal é viabilizar a implementação de ações que tragam melhorias 
+  significativas no conhecimento e na compreensão do Sistema Único de Saúde (SUS).
+<br>
+  Com essas ações, esperamos contribuir para a melhoria da qualidade de vida da população, fortalecendo o vínculo entre a comunidade e o sistema de saúde pública. 
+  Através da educação e da inclusão digital, nosso projeto visa criar uma sociedade mais informada e consciente, capaz de usufruir plenamente dos benefícios proporcionados pelo SUS.</h1>
+
+  
+  
+    <h1></h1>
+    
+   <center> <img src="quem somos.jpg" height="400 " width="400"> <img src="objetivo.jpg" height="400 " width="400" >
+    <a href="https://www.instagram.com/infosusafya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+        <br>
+        Clike aqui ou em cima da foto abaixo para acessar o nosso instagran e ficar por dentro de tudo sobre o SUS!
+        <br>
+        <img src="instagran.jpg" height="100" width="150"></center>
+        <center><img src="logo sao lucas afya.png" height="300" width="900"></center>
+  </article>
+</section>
+
+
+</body>
+</html>
